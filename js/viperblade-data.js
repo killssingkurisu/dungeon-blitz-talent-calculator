@@ -46,7 +46,7 @@
 		],
 		"skills": [
 			{"name":"Mist Walk","description":"Dash and deal a powerful AoE Intimidate with 5 stacks of bleed. Gain increased Defense during the dash."},
-			{"name":"Vicious Assault","description":"Dash to a target and unleash a multi-hit combo that applies Bleed with every blow."},
+			{"name":"Crimson Butterfly","description":"Slash nearby enemies and remove up to 3 stacks of bleed per target. Removed bleed deals extra damage."},
 			{"name":"Charon's Blades","description":"Transform into a Death Avatar. Gain increased Attack damage for the duration."}
 		],
 		"stats": [
