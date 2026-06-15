@@ -4,8 +4,7 @@ Static GitHub Pages build of a Dungeon Blitz talent calculator.
 
 ## Disciplines
 
-- Rogue / Viperblade
-- Rogue / Shadowstalker
+- All done.
 
 The calculator uses recovered game UI assets and local JavaScript data files, so it runs as a plain static website with no backend.
 
