@@ -5,6 +5,8 @@ body {
 	text-shadow: 1px 1px 2px #2d3427;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
+	position: relative;
+	min-width: 1500px;
 	
 	//background-color: #191920;
 }
@@ -63,6 +65,195 @@ a, a:visited, a:hover {
 .bg-panel {
 	background-color: #5b6a53;
 	border-radius: 16px;
+}
+
+.login-screen {
+	position: fixed;
+	z-index: 5000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.84);
+}
+
+.login-screen.hidden {
+	display: none;
+}
+
+.login-card {
+	width: 318px;
+	min-height: 238px;
+	padding: 20px;
+	border: 2px solid rgba(207, 181, 37, 1);
+	border-radius: 8px;
+	box-shadow: 0px 0px 12px black;
+	background: url(images/talent-tip.png) repeat;
+	box-sizing: border-box;
+}
+
+.login-title {
+	margin-bottom: 18px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #f7e9af;
+}
+
+.login-card label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+.login-card input {
+	width: 100%;
+	height: 31px;
+	margin-bottom: 12px;
+	padding: 5px 8px;
+	border: 1px solid #b5c4ac;
+	border-radius: 4px;
+	background-color: #151812;
+	color: #ede1bb;
+	box-sizing: border-box;
+	font: inherit;
+}
+
+.login-error {
+	min-height: 18px;
+	margin-top: 8px;
+	color: #ff6c6c;
+	font-weight: bold;
+	text-align: center;
+}
+
+.save-rail {
+	position: absolute;
+	z-index: 20;
+	top: 20px;
+	width: 214px;
+}
+
+.save-rail-left {
+	left: calc(50% - 735px);
+}
+
+.save-rail-right {
+	left: calc(50% + 521px);
+}
+
+.save-panel,
+.save-slot {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 2px solid rgba(207, 181, 37, 1);
+	border-radius: 8px;
+	box-shadow: 0px 0px 4px black;
+	background: url(images/talent-tip.png) repeat;
+	box-sizing: border-box;
+}
+
+.save-profile {
+	min-height: 94px;
+}
+
+.save-eyebrow {
+	margin-bottom: 5px;
+	color: #bfcab9;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.save-user-name,
+.save-current-name,
+.save-slot-name {
+	overflow: hidden;
+	color: #f7e9af;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.save-current-meta,
+.save-slot-meta {
+	min-height: 28px;
+	margin-top: 5px;
+	color: #c8d7bd;
+	font-size: 11px;
+	line-height: 14px;
+}
+
+.save-slots {
+	padding-bottom: 10px;
+}
+
+.save-slot {
+	min-height: 126px;
+}
+
+.save-slot.empty {
+	opacity: 0.82;
+}
+
+.save-slot.active {
+	border-color: #00cbfe;
+	box-shadow: 0px 0px 7px #00cbfe;
+}
+
+.save-slot-number {
+	float: right;
+	color: #bfcab9;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.save-slot-actions {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 6px;
+	margin-top: 9px;
+}
+
+.save-button {
+	min-height: 27px;
+	padding: 4px 8px;
+	border: 1px solid #88947c;
+	border-radius: 4px;
+	background-color: #31382c;
+	color: #ede1bb;
+	cursor: pointer;
+	font: inherit;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px 2px #1b1f18;
+}
+
+.save-button:hover,
+.save-button:focus {
+	border-color: #cfb525;
+	background-color: #46533e;
+	outline: none;
+}
+
+.save-button.primary {
+	width: 100%;
+	border-color: #cfb525;
+	background-color: #4d5d42;
+}
+
+.save-button.danger {
+	color: #ffc5c5;
+}
+
+.save-button:disabled {
+	border-color: #4e5948;
+	background-color: #24291f;
+	color: #767f70;
+	cursor: default;
 }
 
 .header {
