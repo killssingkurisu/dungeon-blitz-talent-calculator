@@ -259,6 +259,17 @@
 		renderAll();
 	}
 
+	function loginAsGuest() {
+		currentUser = "Guest";
+		currentProfileKey = makeProfileKey(currentUser, "guest");
+		storageSet(REMEMBERED_USER_KEY, currentUser);
+		$("#login_error").text("");
+		$("#login_name").val(currentUser);
+		$("#login_password").val("");
+		$("#login_screen").addClass("hidden");
+		renderAll();
+	}
+
 	function showLogin() {
 		var lastUser = normalizeUserName(storageGet(REMEMBERED_USER_KEY));
 		currentUser = "";
@@ -277,6 +288,10 @@
 		$("#login_form").on("submit", function (event) {
 			event.preventDefault();
 			login($("#login_name").val(), $("#login_password").val());
+		});
+
+		$("#guest_login_button").on("click", function () {
+			loginAsGuest();
 		});
 
 		$("#logout_button").on("click", function () {

@@ -4,10 +4,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=1006">
 	<title>Dungeon Blitz Talent Calculator</title>
-	<link rel="stylesheet" href="main.css?v=55" type="text/css">
+	<link rel="stylesheet" href="main.css?v=56" type="text/css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<script type="text/javascript">
-		var json_version = 56;
+		var json_version = 57;
 	</script>
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/talent-data.js?v=60"></script>
@@ -18,7 +18,7 @@
 	<script src="js/justicar-data.js?v=2"></script>
 	<script src="js/templar-data.js?v=1"></script>
 	<script src="js/talentcalc.js?v=62"></script>
-	<script src="js/save-slots.js?v=1"></script>
+	<script src="js/save-slots.js?v=2"></script>
 </head>
 <body>
 	<div class="login-screen" id="login_screen">
@@ -29,6 +29,7 @@
 			<label for="login_password">Password</label>
 			<input type="password" id="login_password" autocomplete="current-password" maxlength="64">
 			<button type="submit" class="save-button primary">Login</button>
+			<button type="button" class="save-button guest-button" id="guest_login_button">Continue as Guest</button>
 			<div class="login-error" id="login_error"></div>
 		</form>
 	</div>
